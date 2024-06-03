@@ -21,10 +21,8 @@ const Header = () => {
             <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </nav>
-        <div className="header-right">
-          {/* <a href="tel:+1234567890" className="contact-info">Call: +123 456 7890</a> */}
-          <button className="appointment-btn">Book an Appointment</button>
-        </div>
+        {/* <div className="header-right">
+        </div> */}
       </div>
     </header>
   );

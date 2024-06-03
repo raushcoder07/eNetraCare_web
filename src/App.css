@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    /* position: sticky; */
     background-color: #004080;
     color: white;
   }
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: sticky; */
     width: 100%;
   }
   
@@ -28,6 +30,7 @@
   
   .nav ul {
     list-style: none;
+    /* position: sticky; */
     display: flex;
     gap: 1.5rem;
     margin: 0;
@@ -69,4 +72,106 @@
   .appointment-btn:hover {
     background-color: #1E90FF;
   }
+
+
+  /* HOme css */
+  .home {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero {
+    background-color: #004080;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .cta-btn {
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  .cta-btn:hover {
+    background-color: #1E90FF;
+  }
+  
+  .intro, .about-eye-health, .services, .testimonials, .education, .contact-cta {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  /* Footer css */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin: 20px 0;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-section {
+        margin: 0 20px;
+    }
+}
+
+  
   

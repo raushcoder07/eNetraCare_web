@@ -5,15 +5,14 @@ import Header from "./Header";
 import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
 import About from "./Component/About";
-import Ai from "./Component/Ai";
 import Cataract from "./Component/Cataract";
 import Services from "./Component/Services";
-import Resources from "./Component/Resources";
 import News from "./Component/News";
 // import About from "./Component/About";
 import Information from "./Component/Information";
 import Tips from "./Component/Tips";
 import Testimonials from "./Component/Testimonials";
+import Blogs from "./Component/Blogs";
 
 function App() {
   return (
@@ -21,9 +20,10 @@ function App() {
     <Header/>
       <Routes>
         {/* <Contact/> */}
-        <Route path="/ai-detection" element={<Ai/>}/>
+        <Route path="/blogs" element={<Blogs/>}/>
         <Route path="/cataracts" element={<Cataract/>}/>
         <Route path="/services" element={<Services/>}/>
+
         <Route path="/testimonials" element={<Testimonials/>}/>
         <Route path="/news" element={<News/>}/>
         <Route path="/information" element={<Information/>}/>

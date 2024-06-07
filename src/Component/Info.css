@@ -1,0 +1,61 @@
+.Information {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .Information h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .Information .EyeDisorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 40px;
+  }
+  
+  .Information .EyeDisorder:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Information h2 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+  }
+  
+  .Information img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .Information p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 20px 20px;
+  }
+  
+  .Information a {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  .Information a:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  

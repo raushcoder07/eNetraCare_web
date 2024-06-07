@@ -1,0 +1,145 @@
+.hero-image-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .eye-tips-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  .hero-container {
+    margin-bottom: 2rem;
+  }
+  
+  #eye-tips-title {
+    font-size: 2rem;
+    color: #004080;
+  }
+  
+  .eye-tips-desc {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .tips-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .eye-tips-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  .tips-info {
+    max-width: 600px;
+    text-align: left;
+    flex: 1;
+  }
+  
+  .tips-info h2 {
+    font-size: 1.5rem;
+    color: #004080;
+  }
+  
+  .tips-info ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .tips-info li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .articles-container {
+    margin-top: 3rem;
+  }
+  
+  .articles-container h2 {
+    font-size: 1.5rem;
+    color: #004080;
+  }
+  
+  .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .articles article {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .articles h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .articles p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .articles a {
+    color: #004080;
+    text-decoration: none;
+  }
+  
+  .articles a:hover {
+    text-decoration: underline;
+  }
+  
+  .see-more {
+    display: block;
+    margin-top: 1rem;
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .see-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .tips-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .eye-tips-img {
+      max-width: 100%;
+    }
+  
+    .tips-info {
+      max-width: 100%;
+    }
+  
+    .articles {
+      align-items: flex-start;
+    }
+  }
+  

@@ -9,7 +9,11 @@ import Ai from "./Component/Ai";
 import Cataract from "./Component/Cataract";
 import Services from "./Component/Services";
 import Resources from "./Component/Resources";
+import News from "./Component/News";
 // import About from "./Component/About";
+import Information from "./Component/Information";
+import Tips from "./Component/Tips";
+import Testimonials from "./Component/Testimonials";
 
 function App() {
   return (
@@ -20,7 +24,11 @@ function App() {
         <Route path="/ai-detection" element={<Ai/>}/>
         <Route path="/cataracts" element={<Cataract/>}/>
         <Route path="/services" element={<Services/>}/>
-        <Route path="/resources" element={<Resources/>}/>
+        <Route path="/testimonials" element={<Testimonials/>}/>
+        <Route path="/news" element={<News/>}/>
+        <Route path="/information" element={<Information/>}/>
+        <Route path="/tips" element={<Tips/>}/>
+
 
         <Route path="/about" element={<About/>}/>
         <Route path ="/" element={<Home/>}/>

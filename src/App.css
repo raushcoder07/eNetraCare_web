@@ -62,6 +62,7 @@
   top: 100%;
   left: 0;
   min-width: 200px;
+  border: 1px solid #00BFFF;
 }
 
 .submenu:hover .submenu-items {
@@ -205,5 +206,44 @@ footer {
     }
 }
 
-  
-  
+/* Testimonial.css */
+.testimonials-container {
+  margin-top: 20px;
+  text-align: center; /* Center the content horizontally */
+}
+
+/* Individual Testimonial Card */
+.testimonial {
+  width: calc(50% - 20px); /* Set width for each container */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #007bff; /* Blue border */
+  margin-bottom: 20px;
+  display: inline-block; /* Display containers inline */
+}
+
+/* Testimonial Rating */
+.testimonial-rating {
+  color: gold; /* Golden color for stars */
+}
+
+/* Testimonial Review */
+.testimonial-review {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+  font-style: italic;
+}
+
+/* Testimonials Heading */
+.testimonials-heading {
+  text-align: center;
+  color: #004080;
+  font-size: 24px;
+  margin-bottom: 20px;
+}

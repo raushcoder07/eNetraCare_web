@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Image, Flex, IconButton, useBreakpointValue } from '@chakra-ui/react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const images = [
-  { src: 'https://t3.ftcdn.net/jpg/01/14/54/28/240_F_114542856_uhdDKbtqZoU3rca3CQ2gAZVsYNhMgHRR.jpg', alt: 'Image 1' },
-  { src: 'https://t3.ftcdn.net/jpg/07/07/25/90/240_F_707259033_klwARtQp45gGFYjIkBciig8LXRrdUQcx.jpg', alt: 'Image 2' },
+  { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/03/cataract-desktop.jpg', alt: 'Image 1' },
+  { src: 'https://media.istockphoto.com/id/1189207226/photo/female-patient-checking-vision-in-ophthalmological-clinic.jpg?s=1024x1024&w=is&k=20&c=OQBLImUFVlquAK3Rd0YoOgSYto0f4NThAN_jNZ_2TnI=', alt: 'Image 2' },
   { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/12/lasik-landing-desktop.jpg', alt: 'Image 3' },
-  { src: 'https://ibb.co/YR5vF5S', alt: 'Image 4' },
-  { src: 'https://via.placeholder.com/800x400?text=Image+5', alt: 'Image 5' },
+  { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/03/dry-eye-desktop.jpg', alt: 'Image 4' },
+  { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/08/doctor-G-Banner-1.png', alt: 'Image 5' },
 ];
 
 const Carousel = () => {
@@ -57,7 +57,7 @@ const Carousel = () => {
         ))}
       </Flex>
       <IconButton
-        icon={<FaArrowLeft />}
+        icon={<FaChevronLeft />}
         position="absolute"
         left="10px"
         top="50%"
@@ -71,7 +71,7 @@ const Carousel = () => {
         color="white"
       />
       <IconButton
-        icon={<FaArrowRight />}
+        icon={<FaChevronRight />}
         position="absolute"
         right="10px"
         top="50%"

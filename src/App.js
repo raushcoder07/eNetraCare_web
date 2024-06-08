@@ -1,5 +1,6 @@
 import { BrowserRouter as Router ,Route ,Routes } from "react-router-dom";
 // import header from "./Component/header";
+import Thin from "./Component/Thin";
 import Home from "./Component/Home";
 import Header from "./Header";
 import Footer from "./Component/Footer";
@@ -34,6 +35,7 @@ function App() {
         <Route path ="/" element={<Home/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
+      <Thin/>
       <Footer/>
 
     </Router>

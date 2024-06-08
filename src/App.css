@@ -64,6 +64,7 @@
   left: 0;
   min-width: 200px;
   border: 1px solid #00BFFF;
+  z-index: 20;
 }
 
 .submenu:hover .submenu-items {
@@ -89,6 +90,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  z-index: 10;
 }
 
 .contact-info {
@@ -185,7 +187,23 @@
   height: 50px; /* Fixed height */
   object-fit: cover; /* Ensures the image covers the entire area without distorting */
 }
+@media (max-width: 1024px) {
+  .image-slide img {
+    height: 350px; /* Adjust height for medium screens */
+  }
+}
 
+@media (max-width: 768px) {
+  .image-slide img {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-slide img {
+    height: 200px; /* Adjust height for mobile screens */
+  }
+}
   
   .cta-btn {
     background-color: #00BFFF;
@@ -209,6 +227,8 @@
   
 
 
+
+  
 
   /* Footer css */
   body {

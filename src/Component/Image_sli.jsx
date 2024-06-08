@@ -5,8 +5,8 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 const images = [
   { src: 'https://t3.ftcdn.net/jpg/01/14/54/28/240_F_114542856_uhdDKbtqZoU3rca3CQ2gAZVsYNhMgHRR.jpg', alt: 'Image 1' },
   { src: 'https://t3.ftcdn.net/jpg/07/07/25/90/240_F_707259033_klwARtQp45gGFYjIkBciig8LXRrdUQcx.jpg', alt: 'Image 2' },
-  { src: 'https://via.placeholder.com/800x400?text=Image+3', alt: 'Image 3' },
-  { src: 'https://via.placeholder.com/800x400?text=Image+4', alt: 'Image 4' },
+  { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/12/lasik-landing-desktop.jpg', alt: 'Image 3' },
+  { src: 'https://ibb.co/YR5vF5S', alt: 'Image 4' },
   { src: 'https://via.placeholder.com/800x400?text=Image+5', alt: 'Image 5' },
 ];
 

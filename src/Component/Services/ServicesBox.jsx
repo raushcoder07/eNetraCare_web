@@ -1,20 +1,12 @@
 import React from 'react'
 
-const Services = () => {
-  return (
-    // <!-- Service 4 - Bootstrap Brain Component -->
-    <section className="bg-light py-5 py-xl-8">
-      <div className="container">
-        <div className="row justify-content-md-center">
-          <div className="col-12 col-md-10 col-lg-8 col-xl-7">
-            <h3 className="fs-6 mb-2 text-secondary text-center text-uppercase">What We Do?</h3>
-            <h2 className="display-5 mb-5 text-center">We are giving you perfect solutions with our proficient services.</h2>
-            <hr className="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
-          </div>
-        </div>
-      </div>
-    
-      <div className="container overflow-hidden">
+function ServicesBox({
+    name,
+    desc,
+}) {
+    return (
+
+        <div className="container overflow-hidden">
         <div className="row gy-4 gy-xl-0">
           <div className="col-12 col-sm-6 col-xl-3">
             <div className="card border-0 border-bottom border-primary shadow-sm">
@@ -69,9 +61,9 @@ const Services = () => {
                   </svg></span>
                 </a>
               </div>
-              
             </div>
           </div>
+          
           <div className="col-12 col-sm-6 col-xl-3">
             <div className="card border-0 border-bottom border-primary shadow-sm">
 
@@ -92,7 +84,8 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </section>  )
+
+    )
 }
 
-export default Services
+export default ServicesBox

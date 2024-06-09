@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -6,6 +12,7 @@
   background-color: #004080;
   color: white;
   position: relative;
+  width: 100%;
 }
 
 .container {
@@ -26,7 +33,7 @@
 }
 
 .logo .logo-icon {
-  margin-right: 0.1rem;
+  margin-right: 0.5rem;
   font-size: 1.5rem; /* Adjust the size of the icon */
 }
 
@@ -60,7 +67,7 @@
 }
 
 .submenu {
-  cursor: pointer;
+  position: relative;
 }
 
 .submenu-link {
@@ -165,6 +172,15 @@
   .submenu-items {
     position: relative;
     top: 0;
+    left: 0; /* Align submenu items with the parent item */
+    min-width: 100%; /* Ensure submenu items take the full width of the parent item */
+  }
+
+  .submenu.active .submenu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .header-right {
@@ -191,7 +207,17 @@
   .header-right {
     align-items: flex-start;
   }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .nav ul {
+    padding: 0.5rem;
+  }
 }
+
+
 
 
 

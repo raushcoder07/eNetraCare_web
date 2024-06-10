@@ -37,20 +37,22 @@ const Carousel = () => {
   }, [currentIndex]);
 
   const arrowSize = useBreakpointValue({ base: '40px', md: '60px' });
+  const carouselHeight = useBreakpointValue({ base: '250px', md: '400px' });
 
   return (
-    <Box position="relative" overflow="hidden" width="full" height="400px">
+    <Box position="relative" overflow="hidden" width="full" height={carouselHeight}>
       <Flex
         transition="transform 0.5s ease-in-out"
         transform={`translateX(-${currentIndex * 100}%)`}
+        height="100%"
       >
         {images.map((image, index) => (
-          <Box key={index} flex="none" width="full">
+          <Box key={index} flex="none" width="full" height="100%">
             <Image
               src={image.src}
               alt={image.alt}
               width="full"
-              height="400px"
+              height="100%"
               objectFit="cover"
             />
           </Box>

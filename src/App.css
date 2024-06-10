@@ -1,13 +1,18 @@
-
-/* Header css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.1rem 1rem;
   background-color: #004080;
   color: white;
+  position: relative;
+  width: 100%;
 }
 
 .container {
@@ -15,11 +20,21 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .logo h1 {
   margin: 0;
   font-size: 1.8rem;
+}
+
+.logo .logo-text {
+  font-weight: bold;
+}
+
+.logo .logo-icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem; /* Adjust the size of the icon */
 }
 
 .tagline {
@@ -52,7 +67,17 @@
 }
 
 .submenu {
-  cursor: pointer;
+  position: relative;
+}
+
+.submenu-link {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-icon {
+  margin-left: 0.5rem;
+  font-size: 0.8rem; /* Adjust the size of the dropdown icon */
 }
 
 .submenu-items {
@@ -66,9 +91,11 @@
   left: 0;
   min-width: 200px;
   border: 1px solid #00BFFF;
+  z-index: 20;
 }
 
-.submenu:hover .submenu-items {
+.submenu:hover .submenu-items,
+.submenu.active .submenu-items {
   display: block;
 }
 
@@ -91,6 +118,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  z-index: 10;
 }
 
 .contact-info {
@@ -99,30 +127,141 @@
   font-size: 1rem;
 }
 
+/* Hamburger Menu Styles */
+.menu-toggle {
+  display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 0;
+    display: none;
+    width: 100%;
+    background-color: #004080;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+    z-index: 10; /* Ensure the nav is above other content */
+  }
+
+  .nav.active ul {
+    display: flex;
+  }
+
+  .nav li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .submenu-items {
+    position: relative;
+    top: 0;
+    left: 0; /* Align submenu items with the parent item */
+    min-width: 100%; /* Ensure submenu items take the full width of the parent item */
+  }
+
+  .submenu.active .submenu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  .header-right {
+    align-items: flex-start;
+  }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .nav ul {
+    padding: 0.5rem;
+  }
+}
+
+
+
+
+
 
 
   /* HOme css */
   .home {
-    padding: 2rem;
+    /* padding: 2rem; */
     font-family: Arial, sans-serif;
   }
   
-  .hero {
-    background-color: #004080;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
+ /* Container to ensure the slider takes full width */
+.hero {
+  width: 100%;
+  overflow: hidden; /* Hides overflow content */
+}
+
+.image-slide {
+  display: flex; /* Aligns child elements in a row */
+  width: 100%;
+}
+
+.image-slide img {
+  width: 100%; /* Full width */
+  height: 50px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the entire area without distorting */
+}
+@media (max-width: 1024px) {
+  .image-slide img {
+    height: 350px; /* Adjust height for medium screens */
   }
-  
-  .hero h1 {
-    margin: 0;
-    font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .image-slide img {
+    height: 300px; /* Adjust height for smaller screens */
   }
-  
-  .hero p {
-    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+  .image-slide img {
+    height: 200px; /* Adjust height for mobile screens */
   }
+}
   
   .cta-btn {
     background-color: #00BFFF;
@@ -146,6 +285,8 @@
   
 
 
+
+  
 
   /* Footer css */
   body {

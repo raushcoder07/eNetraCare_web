@@ -1,42 +1,63 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Link } from "react-router-dom";
+import { AntDesignOutlined, DownOutlined } from '@ant-design/icons';
 
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
+  };
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
+
+  const closeMenu = () => {
+    setMenuVisible(false);
   };
 
   return (
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h1>EyeCare AI</h1>
+          <h1>
+            <Link to="/" onClick={closeMenu}>
+              <AntDesignOutlined className="logo-icon" /> <span className="logo-text">eNetraCare</span>
+            </Link>
+          </h1>
           <p className="tagline">AI-Powered Eye Health & Cataract Detection</p>
         </div>
-        <nav className="nav">
+        <button className="menu-toggle" aria-label="Toggle navigation" onClick={toggleMenu}>
+          &#9776; {/* Unicode for the hamburger icon */}
+        </button>
+        <nav className={`nav ${menuVisible ? 'active' : ''}`}>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            {/* <li><Link to="/ai-detection">AI Detection</Link></li> */}
-            <li><Link to="/cataracts">Cataracts</Link></li>
-
-            <li className="submenu" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-              <Link to="/resources">Patient Resources</Link>
+            <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
+            <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+            {/* <li><Link to="/ai-detection" onClick={closeMenu}>AI Detection</Link></li> */}
+            <li><Link to="/cataracts" onClick={closeMenu}>Cataracts</Link></li>
+            <li 
+              className="submenu" 
+              onMouseEnter={toggleDropdown} 
+              onMouseLeave={toggleDropdown}
+            >
+              <span className="submenu-link">
+                <Link to="/resources" onClick={(e) => e.preventDefault()}>Patient Resources <DownOutlined className="dropdown-icon" /></Link>
+              </span>
               {dropdownVisible && (
                 <ul className="submenu-items">
-                  <li><Link to="/testimonials">Testimonials</Link></li>
-                  <li><Link to="/information">Disorder</Link></li>
-                  <li><Link to="/news">News</Link></li>
-                  <li><Link to="/tips">Tips & Care</Link></li>
+                  <li><Link to="/testimonials" onClick={closeMenu}>Testimonials</Link></li>
+                  <li><Link to="/information" onClick={closeMenu}>Disorder</Link></li>
+                  <li><Link to="/news" onClick={closeMenu}>News</Link></li>
+                  <li><Link to="/tips" onClick={closeMenu}>Tips & Care</Link></li>
                 </ul>
               )}
             </li>
-            <li><Link to="/blogs">Blogs</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            <li><Link to="/blogs" onClick={closeMenu}>Blogs</Link></li>
+            <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
           </ul>
         </nav>
       </div>

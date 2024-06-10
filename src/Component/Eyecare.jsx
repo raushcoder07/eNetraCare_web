@@ -1,18 +1,19 @@
 import React from 'react'
 import '../App.css'
+import Image_sli from './Image_sli';
 
 const Home = () => {
   return (
     <section id="home" className="home">
       <div className="hero">
-        <h1>Welcome to EyeCare AI</h1>
-        <p>Revolutionizing eye health with AI technology for early cataract detection and treatment.</p>
-        <button className="cta-btn">Book an Appointment</button>
+        <Image_sli/>
       </div>
       <div className="intro">
         <h2>AI-Powered Cataract Detection</h2>
         <p>Our advanced AI technology helps in the early detection of cataracts, ensuring timely treatment and better eye health outcomes.</p>
       </div>
+
+
       <div className="about-eye-health">
         <h2>About Eye Health</h2>
         {/* <img src={eyeHealthImage} alt="Eye Health" className="eye-health-image" /> */}

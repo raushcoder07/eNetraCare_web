@@ -7,7 +7,7 @@ import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
 import About from "./Component/About";
 import Cataract from "./Component/Cataract";
-import Services from "./Component/Services";
+import Services from "./Component/Services/Services";
 import News from "./Component/News";
 // import About from "./Component/About";
 import Information from "./Component/Information";

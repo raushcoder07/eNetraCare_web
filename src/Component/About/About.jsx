@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutCSS.css';
-import tree from '../assets/images/tree-logo.png';
-import society from '../assets/images/society.jpg';
+import tree from '../../assets/images/tree-logo.png';
+import society from '../../assets/images/society.jpg';
 import Journey from './Journey';
 import Card from './Card';
 

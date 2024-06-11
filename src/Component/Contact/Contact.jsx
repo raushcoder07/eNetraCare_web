@@ -1,39 +1,44 @@
 import React from 'react'
+import './ContactCSS.css'
 
 const Contact = () => {
   return (
-    <div className="xyz">
-         <main>
-            <h1>Contact Us</h1>
-            <form >
+    // <div classNameName="contact-container">
+    //   <div classNameName="contact-content">
+    //     <h1 id='contact-title'>Connect with us  </h1>
+    //     <div>
+    //       <div classNameName='contact-details'>
+    //       <i className="fa-solid fa-phone"></i>
+    //       <p id='contact-number'>+1-423-826-6231</p>
+    //       </div>
 
-            <div>
-                    <label >Name</label>
-                    <input type="text" required placeholder="Acb"/>   
-                    
-                </div>
-     
+    //       <div classNameName='contact-details'>
+    //       <i className="fa-solid fa-location-dot"></i>
+    //       <div><p id='contact-address'> 998 Broadway Avenue <br /> Zip:19054, Levittown <br />Pennsylvania,United States</p></div>
 
-                <div>
-                    <label >Email</label>
-                    <input type="email" required placeholder="xyz@gamil.com"/>   
-                    
-                </div>
+    //       </div>
 
-                <div>
-                    <label >Message</label>
-                    <input type="text" required placeholder="Tell us about your vision............."/>   
-                    
-                </div>
+    //     </div>
+    //   </div>
+    // </div>
+    <div classNameName='contact'>
+      <div className="contact-container">
+        <div className="row">
+          <div className="col-md-4">
+            <address>
+              <strong>Example Inc.</strong><br />
+              1234 Example Street<br />
+              Antartica, Example 0987<br />
+              <abbr title="Phone">P:</abbr> (123) 456-7890
+            </address>
 
-                <button type='submit'>Send</button>
-
-
-
-
-
-            </form>
-         </main>
+            <address>
+              <strong>Full Name</strong><br />
+              <a href="mailto:#">exam.ple@example.com</a>
+            </address>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

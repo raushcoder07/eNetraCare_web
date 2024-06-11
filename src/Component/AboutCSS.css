@@ -7,7 +7,7 @@
 .about-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     width: 100%;
 }
@@ -51,6 +51,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 300px;
 }
 
 .care-about .text-container, .help-society .text-container {
@@ -108,7 +109,8 @@
     padding: 20px;
 }
 
- Bootstrap social link styles 
+ /* Bootstrap social link styles  */
+
 .social-link {
     width: 30px;
     height: 30px;
@@ -116,11 +118,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4e4e4e;
+    color: #666;
     border-radius: 50%;
     transition: all 0.3s;
-    font-size: 1rem;
-    padding: 5px;
+    font-size: 0.9rem;
 }
 
 .social-link:hover, .social-link:focus {

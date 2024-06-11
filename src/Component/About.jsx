@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className='about-container'>
       <div className='hero-container'>
-        <h1 id='about-title'>About <span style={{color:'green'}}>eNetracare</span></h1>
+        <h1 id='about-title'>About <span style={{ color: 'green' }}>eNetracare</span></h1>
         <p className='about-desc'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nihil nisi mollitia consequuntur </p>
       </div>
 

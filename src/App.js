@@ -14,6 +14,7 @@ import Information from "./Component/Information";
 import Tips from "./Component/Tips";
 import Testimonials from "./Component/Testimonials";
 import Blogs from "./Component/Blogs";
+import Gallery from "./Component/Gallery";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path ="/" element={<Eyecare/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
+      <Gallery/>
       <Thin/>
       <Footer/>
 

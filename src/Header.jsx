@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="container">
+      <div className="header-container">
         <div className="logo">
           <h1>
             <Link to="/" onClick={closeMenu}>

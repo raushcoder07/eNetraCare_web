@@ -12,7 +12,7 @@ const About = () => {
     <div className='about-container'>
       <div className='hero-container'>
         <h1 id='about-title'>About <span style={{ color: 'green' }}>eNetracare</span></h1>
-        <p className='about-desc'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nihil nisi mollitia consequuntur </p>
+        <p className='about-desc'><em>"Vision for All: Empowering Sight, Enabling Futures."</em></p>
       </div>
 
       <div>
@@ -53,7 +53,7 @@ const About = () => {
       <hr style={{height:'1px'}}/>
 
       <div className="our-team">
-        <h1 id='team-section-title' className='title'>Meet our team</h1>
+        <h1 id='team-section-title' >Meet our team</h1>
         <div className="members">
           <Card
             name="Abhay Bhamaikar"

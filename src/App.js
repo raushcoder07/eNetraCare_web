@@ -36,7 +36,7 @@ function App() {
         <Route path ="/" element={<Eyecare/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
-      <Gallery/>
+      {/* <Gallery/> */}
       <Thin/>
       <Footer/>
 

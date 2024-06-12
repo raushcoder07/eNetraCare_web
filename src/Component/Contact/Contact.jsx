@@ -21,20 +21,24 @@ const Contact = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className='contact'>
+    
+    <div className='contact-page'>
       <div className="contact-container">
         <div className="row">
           <div className="col-md-4">
             <address>
-              <strong>Example Inc.</strong><br />
-              1234 Example Street<br />
-              Antartica, Example 0987<br />
-              <abbr title="Phone">P:</abbr> (123) 456-7890
+              <strong style={{fontSize:'2rem', marginBottom:'10px'}}>Innovease India Private Limited.</strong><br />
+              P NO 27, MOTI DOONGRI YOJANA,<br />
+              GOVIND MARG,<br />
+              Jaipur, Rajasthan, India, 302004<br />
+              Year of Founding: 2021<br />
+              Phone: +91-9923795140 / +91-9284197126
             </address>
 
             <address>
-              <strong>Full Name</strong><br />
-              <a href="mailto:#">exam.ple@example.com</a>
+              <strong>Email <i className="fa-regular fa-envelope"></i></strong><br />
+              <a href="mailto:#"> innoveaseindia@rediffmail.com </a>
+              <a href="mailto:#"> aabhamaikar1982@gmail.com</a>
             </address>
           </div>
         </div>

@@ -21,14 +21,14 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="container">
+      <div className="header-container">
         <div className="logo">
           <h1>
             <Link to="/" onClick={closeMenu}>
               <AntDesignOutlined className="logo-icon" /> <span className="logo-text">eNetraCare</span>
             </Link>
           </h1>
-          <p className="tagline">AI-Powered Eye Health & Cataract Detection</p>
+          <p className="tagline">A visionary initiative by Innovease India Pvt. Ltd. </p>
         </div>
         <button className="menu-toggle" aria-label="Toggle navigation" onClick={toggleMenu}>
           &#9776; {/* Unicode for the hamburger icon */}

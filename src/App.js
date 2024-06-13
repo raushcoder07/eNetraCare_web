@@ -4,17 +4,17 @@ import Thin from "./Component/Thin";
 import Eyecare from "./Component/Eyecare"
 import Header from "./Header";
 import Footer from "./Component/Footer";
-import Contact from "./Component/Contact";
-import About from "./Component/About";
+import Contact from "./Component/Contact/Contact";
+import About from "./Component/About/About";
 import Cataract from "./Component/Cataract";
 import Services from "./Component/Services/Services";
 import News from "./Component/News";
 // import About from "./Component/About";
-import Information from "./Component/Information";
-import Tips from "./Component/Tips";
+import Information from "./Component/Disorder-Info/Information";
+import Tips from "./Component/Tips/Tips";
 import Testimonials from "./Component/Testimonials";
 import Blogs from "./Component/Blogs";
-import Gallery from "./Component/Gallery";
+import Gallery from "./Component/Gallery/Gallery";
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
         <Route path ="/" element={<Eyecare/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
-      <Gallery/>
+      {/* <Gallery/> */}
       <Thin/>
       <Footer/>
 

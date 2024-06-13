@@ -13,11 +13,12 @@
   color: white;
   position: relative;
   width: 100%;
+  padding: 15px 0;
 }
 
-.container {
+.header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;

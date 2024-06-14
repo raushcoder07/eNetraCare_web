@@ -1,9 +1,11 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Header Styling */
 .header {
   display: flex;
   justify-content: space-between;
@@ -13,7 +15,7 @@
   color: white;
   position: relative;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 5rem;
 }
 
 .header-container {
@@ -24,18 +26,20 @@
   flex-wrap: wrap;
 }
 
+/* Logo Styling */
 .logo h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2.5rem; /* Increased size for the heading */
 }
 
 .logo .logo-text {
   font-weight: bold;
+  color: white; /* Ensure the logo text color remains white */
 }
 
 .logo .logo-icon {
   margin-right: 0.5rem;
-  font-size: 1.5rem; /* Adjust the size of the icon */
+  font-size: 2rem; /* Increased size of the icon */
 }
 
 .tagline {
@@ -43,6 +47,11 @@
   font-size: 0.9rem;
   font-style: italic;
   color: #CCCCCC;
+}
+
+/* Navigation Menu Styling */
+.nav {
+  margin-left: auto; /* Shift navbar elements to the right */
 }
 
 .nav ul {
@@ -65,6 +74,10 @@
 
 .nav a:hover {
   text-decoration: underline;
+}
+
+.logo a:hover {
+  color: white; /* Ensure logo text color remains white on hover */
 }
 
 .submenu {
@@ -140,7 +153,7 @@
     background: none;
     border: none;
     color: white;
-    font-size: 1.8rem;
+    font-size: 3rem;
     cursor: pointer;
     position: absolute;
     right: 1rem;
@@ -198,7 +211,7 @@
   }
 
   .logo h1 {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Slightly smaller for very small screens */
   }
 
   .tagline {

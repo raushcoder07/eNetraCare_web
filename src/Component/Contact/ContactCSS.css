@@ -1,8 +1,21 @@
 .contact-container {
     margin: 30px 60px;
     font-size: 1.7rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
 
 .contact-page {
     height: 80vh;
+}
+.contact-img{
+    height: 500px;
+}
+
+.contact-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }

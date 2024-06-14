@@ -1,5 +1,6 @@
 import React from 'react'
 import './ContactCSS.css'
+import contactImg from './images/contact.png'
 
 const Contact = () => {
   return (
@@ -21,13 +22,13 @@ const Contact = () => {
     //     </div>
     //   </div>
     // </div>
-    
+
     <div className='contact-page'>
       <div className="contact-container">
-        <div className="row">
-          <div className="col-md-4">
+        <div className="row" style={{width:'50%', margin: '8% 0'}}>
+          <div className="col-md-8">
             <address>
-              <strong style={{fontSize:'2rem', marginBottom:'10px'}}>Innovease India Private Limited.</strong><br />
+              <strong style={{ fontSize: '2rem', marginBottom: '10px' }}>Innovease India Private Limited.</strong><br />
               P NO 27, MOTI DOONGRI YOJANA,<br />
               GOVIND MARG,<br />
               Jaipur, Rajasthan, India, 302004<br />
@@ -41,6 +42,9 @@ const Contact = () => {
               <a href="mailto:#"> aabhamaikar1982@gmail.com</a>
             </address>
           </div>
+        </div>
+        <div className="contact-img-container">
+          <img src={contactImg} className='contact-img' />
         </div>
       </div>
     </div>

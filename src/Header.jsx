@@ -49,14 +49,15 @@ const Header = () => {
               </span>
               {dropdownVisible && (
                 <ul className="submenu-items">
-                  <li><Link to="/testimonials" onClick={closeMenu}>Testimonials</Link></li>
+                  {/* <li><Link to="/testimonials" onClick={closeMenu}>Testimonials</Link></li> */}
                   <li><Link to="/information" onClick={closeMenu}>Disorder</Link></li>
                   <li><Link to="/news" onClick={closeMenu}>News</Link></li>
                   <li><Link to="/tips" onClick={closeMenu}>Tips & Care</Link></li>
+                    <li><Link to="/blogs" onClick={closeMenu}>Blogs</Link></li>
                 </ul>
               )}
             </li>
-            <li><Link to="/blogs" onClick={closeMenu}>Blogs</Link></li>
+            <li><Link to="/Testimonials" onClick={closeMenu}>Testimonials</Link></li>
             <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
           </ul>
         </nav>

@@ -10,14 +10,14 @@ import swati from './images/swati-pic.jpeg'
 const About = () => {
   return (
     <div className='about-container'>
+
       <div className='hero-container'>
-        <h1 id='about-title'>About <span style={{ color: 'green' }}>eNetracare</span></h1>
+        <h1 id='about-title'>About <span style={{ color: 'green' }}>eNetraCare</span></h1>
         <p className='about-desc'><em>"Vision for All: Empowering Sight, Enabling Futures."</em></p>
       </div>
 
       <div>
         <img src="https://images.pexels.com/photos/7163354/pexels-photo-7163354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Employees" className='employees-img' />
-        {/* <p className='info'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad provident possimus ducimus tempora aut sint a. Distinctio maxime laudantium impedit velit rem aspernatur eaque a, at esse voluptas cumque accusamus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vero nihil asperiores laboriosam cumque porro doloremque adipisci aperiam soluta! Quaerat obcaecati aliquid veritatis doloribus, molestiae mollitia quia consectetur qui modi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellat quia, natus illum voluptatum ipsum exercitationem laboriosam maxime vel sapiente, aliquam numquam dolor. Quod, eaque eius mollitia necessitatibus laboriosam porro delectus, nam cupiditate culpa iste totam asperiores odit, excepturi deleniti? </p> */}
         <p className='info'>INNOVEASE INDIA PRIVATE LIMITED is a promising startup focusing on leveraging power of data and technology in healthcare sector. The Startup is registered as Private Limited Company registered under The Companies Act, 2013. Its registered office address is P NO 27 MOTI DOONGRI YOJANA GOVIND MARG Jaipur – Rajasthan, 302004. The startup intends to be the leading player in Eye Care Medical Services by using the capabilities of Information & Technology. With the vast experience of promoters in the field of Technology and Medical services in Eye Care Domain, the startup has developed an innovative product "eNetraCare" to Screen and detect cataract. Start up aims at  getting Medical Services in Eye Care Domain at doorstep.</p>
       </div>
 
@@ -25,17 +25,17 @@ const About = () => {
 
       <div className="care-about">
         <div className="text-container">
-          <h1 className='box-title'>What we care about</h1>
-          <p className='box-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae itaque doloribus obcaecati culpa unde assumenda illum in quia, quasi ut dolor temporibus voluptas inventore dolorem ipsa tempore debitis quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, animi molestiae! Aliquid facilis ab odit officiis, perferendis maiores quis veniam rem repellendus iure at exercitationem deserunt labore dolorum fugit. Repudiandae.</p>
+          <h1 className='text-box-title'>What we care about</h1>
+          <p className='text-box-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae itaque doloribus obcaecati culpa unde assumenda illum in quia, quasi ut dolor temporibus voluptas inventore dolorem ipsa tempore debitis quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, animi molestiae! Aliquid facilis ab odit officiis, perferendis maiores quis veniam rem repellendus iure at exercitationem deserunt labore dolorum fugit. Repudiandae.</p>
         </div>
         <div className="img-container">
           <img src={tree} alt="tree-growth" className='box-img' />
         </div>
       </div>
 
-      <div className="company-journey">
-        <h1 className='journey-title'>Journey of eNetracare</h1>
-        <div className='journey-container'>
+      <div className="company-milestones">
+        <h1 className='milestones-title'>Milestones</h1>
+        <div className='milestones-container'>
           <Journey />
         </div>
       </div>

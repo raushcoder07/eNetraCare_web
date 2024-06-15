@@ -115,7 +115,19 @@
      width: auto;
      max-width: 1200px;
  }
+ .milestone-title-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+ 
 
+ .milestone-icon{
+    max-height: 60px;
+    height: auto;
+ }
 
  /* Additional styling for milestones component cards */
  .milestones-container {

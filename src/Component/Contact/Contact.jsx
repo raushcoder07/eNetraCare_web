@@ -7,7 +7,7 @@ const Contact = () => {
     <div className="contact-page">
       <div className="contact-container">
 
-        <div className="row" style={{ width: '50%', margin: '8% 0' }}>
+        <div className="row" style={{ width: '50%', margin: '4% 0' }}>
           <div className="">
             <address className='contact-details'>
               <strong id='company-name'>Innovease India Private Limited.</strong><br />

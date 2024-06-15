@@ -6,6 +6,7 @@ import Journey from './Journey';
 import Card from './Card';
 import abhay from './images/AbhayPic.jpg'
 import swati from './images/swati-pic.jpeg'
+import milestone from './images/milestone-icon.svg'
 
 const About = () => {
   return (
@@ -18,12 +19,12 @@ const About = () => {
 
       <div>
         <img src="https://images.pexels.com/photos/7163354/pexels-photo-7163354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Employees" className='employees-img' />
-        <p className='info'>INNOVEASE INDIA PRIVATE LIMITED is a promising startup focusing on leveraging power of data and technology in healthcare sector. The Startup is registered as Private Limited Company registered under The Companies Act, 2013. Its registered office address is P NO 27 MOTI DOONGRI YOJANA GOVIND MARG Jaipur – Rajasthan, 302004. The startup intends to be the leading player in Eye Care Medical Services by using the capabilities of Information & Technology. With the vast experience of promoters in the field of Technology and Medical services in Eye Care Domain, the startup has developed an innovative product "eNetraCare" to Screen and detect cataract. Start up aims at  getting Medical Services in Eye Care Domain at doorstep.</p>
+        <p className='info'>eNetraCare by Innovease India Private Limited offers an affordable, portable eye care solution that brings vision testing and cataract screening to patients' doorsteps. Using a mobile app integrated with an  AI-based  Software,   We  address  challenges   like transportation,  healthcare  worker  availability  and  data  precision, focusing on underserved rural and slum areas in India.</p>
       </div>
 
       <hr style={{height:'1px'}}/>
 
-      <div className="care-about">
+      {/* <div className="care-about">
         <div className="text-container">
           <h1 className='text-box-title'>What we care about</h1>
           <p className='text-box-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae itaque doloribus obcaecati culpa unde assumenda illum in quia, quasi ut dolor temporibus voluptas inventore dolorem ipsa tempore debitis quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, animi molestiae! Aliquid facilis ab odit officiis, perferendis maiores quis veniam rem repellendus iure at exercitationem deserunt labore dolorum fugit. Repudiandae.</p>
@@ -31,10 +32,14 @@ const About = () => {
         <div className="img-container">
           <img src={tree} alt="tree-growth" className='box-img' />
         </div>
-      </div>
+      </div> */}
 
       <div className="company-milestones">
-        <h1 className='milestones-title'>Milestones</h1>
+        <div className='milestone-title-container'>
+        <h1 className='milestones-title'>Milestones</h1> 
+        <img src={milestone} className='milestone-icon' />
+        </div>
+        
         <div className='milestones-container'>
           <Journey />
         </div>
@@ -43,7 +48,7 @@ const About = () => {
       <div className="help-society">
         <div className="text-container">
           <h1 className='box-title'>How we plan on helping society</h1>
-          <p className='box-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vitae itaque doloribus obcaecati culpa unde assumenda illum in quia, quasi ut dolor temporibus voluptas inventore dolorem ipsa tempore debitis quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, animi molestiae! Aliquid facilis ab odit officiis, perferendis maiores quis veniam rem repellendus iure at exercitationem deserunt labore dolorum fugit. Repudiandae.</p>
+          <p className='box-desc'>At Innovease India Private Limited, we develop eNetraCare, a cost- effective, portable eye care solution that provides vision testing and cataract screening at the patient's doorstep. Our system integrates a user-friendly mobile app with an AI-powered screening device to deliver precise and accessible eye care, targeting underserved rural and  slum  populations  across  India.  By  addressing  key  challenges such as transportation, availability of trained healthcare workers, and data accuracy, we aim to revolutionize eye care accessibility and efficiency.</p>
         </div>
         <div className="img-container">
           <img src={society} alt="Helping society" className='box-img' />

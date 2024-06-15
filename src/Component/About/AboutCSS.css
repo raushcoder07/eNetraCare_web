@@ -12,6 +12,7 @@
      width: 100%;
  }
 
+ /* ---------Hero starts here -------------- */
  .hero-container {
      display: flex;
      flex-direction: column;
@@ -22,15 +23,19 @@
  }
 
  #about-title {
-     font-size: 4rem;
+     font-size: 3rem;
      margin-bottom: 10px;
  }
 
- .about-desc {
-     font-size: 2rem;
+ .about-desc em {
+     font-size: 1.3rem;
      margin-bottom: 20px;
  }
 
+ /* ---------Hero ends here -------------- */
+
+
+ /* ---------Info starts here -------------- */
  .employees-img {
      width: 100%;
      height: auto;
@@ -40,16 +45,20 @@
 
  .info {
      padding: 40px 50px;
-     font-size: 1.5rem;
+     font-size: 1.2rem;
+     text-align: justify;
      text-align: justify;
      /* margin: 30px 0; */
  }
 
+ /* ---------Info ends here -------------- */
  hr {
      background-color: black;
-     margin:50px;
+     margin: 50px;
      height: 1px;
  }
+
+ /* --------Care about, milestones and society starts here-------- */
 
  .care-about,
  .help-society {
@@ -75,13 +84,13 @@
      padding: 10px;
  }
 
- .box-title {
-     font-size: 3rem;
+ .text-box-title {
+     font-size: 2rem;
      margin-bottom: 10px;
  }
 
- .box-desc {
-     font-size: 1.5rem;
+ .text-box-desc {
+     font-size: 1rem;
  }
 
  .box-img {
@@ -90,18 +99,25 @@
      border-radius: 50%;
  }
 
- .company-journey,
+ .company-milestones,
  .our-team {
      width: 100%;
-     /* text-align: center; */
      padding: 20px 50px;
-     margin-bottom: 100px;
  }
 
- .journey-title {
-     font-size: 4.5rem;
+ .milestones-title {
+     font-size: 3rem;
      text-align: center;
-     margin-bottom: 20px;
+     /* margin-bottom: 20px; */
+ }
+
+ /* Additional styling for milestones component cards */
+ .milestones-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+     padding: 20px;
  }
 
  .members {
@@ -113,20 +129,13 @@
      flex-wrap: wrap;
 
  }
- #team-section-title{
-    text-align: center;
-    font-size: 4.5rem;
-    margin-bottom: 50px;
+
+ #team-section-title {
+     text-align: center;
+     font-size: 3rem;
+     margin-bottom: 50px;
  }
 
- /* Additional styling for Journey component cards */
- .journey-container {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 20px;
-     /* justify-content: center; */
-     padding: 20px;
- }
 
  /* Bootstrap social link styles  */
 
@@ -250,12 +259,14 @@
      width: 100%;
      gap: 00px;
  }
-.card-text-container{
-    width: 700px;
-}
+
+ .card-text-container {
+     width: 700px;
+ }
+
  .card-profile-photo {
      border-radius: 7px;
      /* transform: scale(0.5); */
-      height: 300px;
+     height: 300px;
      /* width: 230px;  */
  }

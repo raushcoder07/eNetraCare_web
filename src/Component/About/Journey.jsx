@@ -3,7 +3,7 @@ import React from 'react'
 function Journey() {
   return (
 
-    <section className="bsb-timeline-7 bg-light py-3 py-md-5 py-xl-8">
+    <section className="bsb-timeline-7 bg-light py-2 py-md-5 py-xl-6">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-10 col-md-12 col-xl-10 col-xxl-9">

@@ -1,5 +1,5 @@
 .contact-container {
-    margin: 30px 60px;
+    /* margin: 30px 60px; */
     display: flex;
     align-items: start;
     justify-content: center;
@@ -9,12 +9,50 @@
     height: 80vh;
 }
 .contact-img{
-    height: 500px;
+    max-height: 400px;
+    height: auto;
+    margin: 10% 0;
 }
 
 .contact-img-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+#company-name{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.contact-details ,.email-list a{
+    font-size: 1rem;
+}
+
+.email-details{
+    margin: 30px 0;
+}
+#email-title{
+    font-size: 1.3rem;
+}
+
+.email-list{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 880px){
+    #company-name{
+        font-size: 3vw;
+    }
+    .contact-details , .email-list a{
+        font-size: 2vw;
+    }
+    #email-title{
+        font-size: 2.5vw;
+    }
+}
+@media (max-width: 768px){
+    .contact-container {
+        align-items: center;
+    }
 }

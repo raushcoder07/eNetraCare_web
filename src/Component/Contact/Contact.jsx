@@ -27,21 +27,6 @@ const Contact = () => {
             </address>
           </div>
 
-          {/* <div className="row">
-          <address>
-            <strong style={{ fontSize: '2rem', marginBottom: '10px' }}>Innovease India Private Limited.</strong><br />
-            P NO 27, MOTI DOONGRI YOJANA,<br />
-            GOVIND MARG,<br />
-            Jaipur, Rajasthan, India, 302004<br />
-            Year of Founding: 2021<br />
-            Phone: +91-9923795140 / +91-9284197126
-          </address>
-          <address>
-            <strong>Email <i className="fa-regular fa-envelope"></i></strong><br />
-            <a href="mailto:innoveaseindia@rediffmail.com">innoveaseindia@rediffmail.com</a>
-            <a href="mailto:aabhamaikar1982@gmail.com">aabhamaikar1982@gmail.com</a>
-          </address> */}
-
         </div>
 
         <div className="google-map-container">

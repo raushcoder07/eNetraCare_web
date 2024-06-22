@@ -4,13 +4,15 @@ import './HomeCSS.css'
 import Image_sli from './Image_sli';
 import AboutImg from './images/about-img.jpeg'
 import { Link } from 'react-router-dom';
+import ServiceCard from './ServiceCard';
+import IMAGES from './index'
 
 const Home = () => {
   return (
     <section id="home" className="home">
       <div className="hero" style={{ position: 'relative' }}>
         <Image_sli />
-        <div className="hero-title">Welcome to <br /><div className='typed-out'>eNetraCare</div>  </div>
+        <div className="hero-title">Welcome to <br /><div className='typed-out' style={{textDecoration:'underline'}}>eNetraCare</div>  </div>
 
       </div>
 
@@ -32,13 +34,21 @@ const Home = () => {
 
       {/* services */}
       <div className="services">
-        <h2>Our Services</h2>
-        <ul>
-          <li>AI Cataract Detection</li>
-          <li>Cataract Surgery</li>
-          <li>Comprehensive Eye Exams</li>
-          <li>Post-Surgery Care</li>
-        </ul>
+        <h2 className='services-title'>Our Services</h2>
+        <div className="sub-container">
+          <div className="services-box-container">
+            <ServiceCard
+              className='animation'
+              img={IMAGES.serviceimg1} />
+            <ServiceCard
+              className='animation'
+              img={IMAGES.serviceimg2} />
+            <ServiceCard
+              className='animation'
+              img={IMAGES.serviceimg3} />
+          </div>
+
+        </div>
       </div>
       <div className="testimonials">
         <h2>What Our Patients Say</h2>

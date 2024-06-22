@@ -36,14 +36,23 @@
   color: white;
 }
 
+/* .logo{
+  display: flex;
+  align-items: center;
+} */
 .logo .logo-icon {
   margin-right: 0.5rem;
   font-size: 1.5rem;
 }
 
+#navbar-logo{
+  height: 60px;
+}
+
 .tagline {
   margin: 0;
-  font-size: 0.9rem;
+  /* width: 50%; */
+  font-size: 0.7rem;
   font-style: italic;
   color: #CCCCCC;
 }
@@ -246,6 +255,37 @@
   width: 100%;
   overflow: hidden; /* Hides overflow content */
 }
+
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.35;
+  height: 100%;
+  width: 100%;
+  z-index:1;
+}
+
+
+.typed-out{
+  overflow: hidden;
+  border-right: .10em solid rgb(183, 183, 183);
+  /* height: 70px; */
+  white-space: nowrap;
+  animation: 
+  typing 2s steps(20, end) forwards ;
+  font-size: 1.6rem;
+  animation-timing-function:ease-in-out;
+  animation-delay: 2s;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40% }
+}
+
 
 .image-slide {
   display: flex; /* Aligns child elements in a row */

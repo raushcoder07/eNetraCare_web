@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { Link } from "react-router-dom";
 import { AntDesignOutlined, DownOutlined } from '@ant-design/icons';
+import eNetraCareLogo from './assets/images/enetracareLogoedited.png'
 
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -25,7 +26,9 @@ const Header = () => {
         <div className="logo">
           <h1>
             <Link to="/" onClick={closeMenu}>
-              <AntDesignOutlined className="logo-icon" /> <span className="logo-text">eNetraCare</span>
+              {/* <AntDesignOutlined className="logo-icon" /> <span className="logo-text">eNetraCare</span> */}
+              <img src={eNetraCareLogo} id='navbar-logo' /> 
+              {/* <span className="logo-text">eNetraCare</span> */}
             </Link>
           </h1>
           <p className="tagline">A visionary initiative by Innovease India Pvt. Ltd. </p>
@@ -58,6 +61,7 @@ const Header = () => {
               )}
             </li>
             <li><Link to="/Testimonials" onClick={closeMenu}>Testimonials</Link></li>
+            <li><Link to="/gallery" onClick={closeMenu}>Gallery</Link></li>
             <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
           </ul>
         </nav>

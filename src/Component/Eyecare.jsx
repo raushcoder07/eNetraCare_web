@@ -5,12 +5,15 @@ import Image_sli from './Image_sli';
 const Home = () => {
   return (
     <section id="home" className="home">
-      <div className="hero">
+      <div className="hero" style={{position:'relative'}}>
         <Image_sli/>
+        {/* <h1 style={{position:'absolute', zIndex:1, top:'30%', left:'10%', color:'white', fontSize:'3.5rem'} } id='typewriter-text' >Welcome to eNetraCare</h1> */}
+        <div class="typed-out" style={{position:'absolute', zIndex:1, top:'30%', left:'10%', color:'white', fontSize:'3.5rem', width:'50%'} }>Welcome to eNetraCare</div>
+        
       </div>
       <div className="intro">
         <h2>AI-Powered Cataract Detection</h2>
-        <p>Our advanced AI technology helps in the early detection of cataracts, ensuring timely treatment and better eye health outcomes.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo obcaecati autem eius repellat esse ullam dignissimos cum quae, quas quod at non nostrum. Reprehenderit cupiditate beatae doloribus tempore aspernatur velit commodi, officiis placeat fugiat expedita fuga, dicta et, esse itaque.</p>
       </div>
 
 

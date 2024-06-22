@@ -2,12 +2,17 @@ import React, { useState, useEffect } from 'react';
 import { Box, Image, Flex, IconButton, useBreakpointValue } from '@chakra-ui/react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
+import image1 from '../assets/images/img-1.jpeg'
+import image2 from '../assets/images/img-2.jpeg'
+import image3 from '../assets/images/img-3.jpeg'
+import image4 from '../assets/images/img-4.jpeg'
+
 const images = [
-  { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/03/cataract-desktop.jpg', alt: 'Image 1' },
-  { src: 'https://media.istockphoto.com/id/1189207226/photo/female-patient-checking-vision-in-ophthalmological-clinic.jpg?s=1024x1024&w=is&k=20&c=OQBLImUFVlquAK3Rd0YoOgSYto0f4NThAN_jNZ_2TnI=', alt: 'Image 2' },
-  { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/12/lasik-landing-desktop.jpg', alt: 'Image 3' },
-  { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/03/dry-eye-desktop.jpg', alt: 'Image 4' },
-  { src: 'https://www.shroffeyecentre.com/wp-content/uploads/2022/08/doctor-G-Banner-1.png', alt: 'Image 5' },
+  { src: image1, alt: 'Image 1' },
+  { src: image2, alt: 'Image 1' },
+  { src: image3, alt: 'Image 1' },
+  { src: image4, alt: 'Image 1' },
+
 ];
 
 const Carousel = () => {
@@ -37,22 +42,23 @@ const Carousel = () => {
   }, [currentIndex]);
 
   const arrowSize = useBreakpointValue({ base: '40px', md: '60px' });
-  const carouselHeight = useBreakpointValue({ base: '250px', md: '400px' });
+  const carouselHeight = useBreakpointValue({ base: '350px', md: '400px' });
 
   return (
-    <Box position="relative" overflow="hidden" width="full" height={carouselHeight}>
+    <Box position="relative" overflow="hidden" opacity='0.9' width="full" height="650px" zIndex='0'>
       <Flex
         transition="transform 0.5s ease-in-out"
         transform={`translateX(-${currentIndex * 100}%)`}
         height="100%"
       >
         {images.map((image, index) => (
-          <Box key={index} flex="none" width="full" height="100%">
+          <Box key={index} flex="none" width="100%" height="100%">
             <Image
               src={image.src}
               alt={image.alt}
               width="full"
               height="100%"
+              // objectFit="center"
               objectFit="cover"
             />
           </Box>

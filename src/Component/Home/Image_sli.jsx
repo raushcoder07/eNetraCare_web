@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Box, Image, Flex, IconButton, useBreakpointValue } from '@chakra-ui/react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-import image1 from '../assets/images/img-1.jpeg'
-import image2 from '../assets/images/img-2.jpeg'
-import image3 from '../assets/images/img-3.jpeg'
-import image4 from '../assets/images/img-4.jpeg'
+import image1 from './images/img-1.jpeg'
+import image2 from './images/img-2.jpeg'
+import image3 from './images/img-3.jpeg'
+import image4 from './images/img-4.jpeg'
 
 const images = [
   { src: image1, alt: 'Image 1' },
@@ -45,9 +45,9 @@ const Carousel = () => {
   const carouselHeight = useBreakpointValue({ base: '350px', md: '400px' });
 
   return (
-    <Box position="relative" overflow="hidden" opacity='0.9' width="full" height="650px" zIndex='0'>
+    <Box position="relative" overflow="hidden" width="full" height="650px" zIndex='0'>
       <Flex
-        transition="transform 0.5s ease-in-out"
+        transition="transform 1s ease-in-out"
         transform={`translateX(-${currentIndex * 100}%)`}
         height="100%"
       >
@@ -70,7 +70,7 @@ const Carousel = () => {
         left="10px"
         top="50%"
         transform="translateY(-50%)"
-        zIndex="1"
+        zIndex="2"
         onClick={prevSlide}
         size={arrowSize}
         aria-label="Previous Slide"
@@ -84,7 +84,7 @@ const Carousel = () => {
         right="10px"
         top="50%"
         transform="translateY(-50%)"
-        zIndex="1"
+        zIndex="2"
         onClick={nextSlide}
         size={arrowSize}
         aria-label="Next Slide"
@@ -103,7 +103,7 @@ const Carousel = () => {
             borderRadius="50%"
             backgroundColor={currentIndex === index ? 'gray.800' : 'gray.400'}
             onClick={() => setSlide(index)}
-            transition="background-color 0.3s ease"
+            transition="background-color 0.5s ease"
           />
         ))}
       </Flex>

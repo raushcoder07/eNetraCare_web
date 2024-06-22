@@ -269,22 +269,6 @@
 }
 
 
-.typed-out{
-  overflow: hidden;
-  border-right: .10em solid rgb(183, 183, 183);
-  /* height: 70px; */
-  white-space: nowrap;
-  animation: 
-  typing 2s steps(20, end) forwards ;
-  font-size: 1.6rem;
-  animation-timing-function:ease-in-out;
-  animation-delay: 2s;
-  width: 0;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 40% }
-}
 
 
 .image-slide {
@@ -329,7 +313,7 @@
     background-color: #1E90FF;
   }
   
-  .intro, .about-eye-health, .services, .testimonials, .education, .contact-cta {
+  .about-eye-health, .services, .testimonials, .education, .contact-cta {
     margin: 2rem 0;
     text-align: center;
   }
@@ -394,7 +378,6 @@ footer {
         margin: 0 20px;
     }
 }
-
 
 
 /* Testimonial.css */

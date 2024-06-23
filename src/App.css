@@ -49,14 +49,6 @@
   height: 60px;
 }
 
-.tagline {
-  margin: 0;
-  /* width: 50%; */
-  font-size: 0.7rem;
-  font-style: italic;
-  color: #CCCCCC;
-}
-
 /* Navigation Menu Styling */
 .nav {
   margin-left: auto;
@@ -261,7 +253,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #001b56;
+  /* background-color: #002244; */
   opacity: 0.35;
   height: 100%;
   width: 100%;

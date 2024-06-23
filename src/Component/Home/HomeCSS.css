@@ -1,37 +1,32 @@
+.hero-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
 .hero-title {
-    position: absolute;
     z-index: 1;
-    top: 30%;
-    left: 10%;
-    color: white;
     font-size: 3.5vw;
-    width: 30%;
+    padding: 0;
+    animation: textAnimate 1s ease-in-out 0.5s 1 forwards;
 }
 
-.hero-title div {
-    font-size: 5.5vw;
-    width: 55%;
-}
+.tagline {
+    margin: 0;
+    font-size: 1.2rem;
+  }
 
-
-.typed-out {
-    overflow: hidden;
-    border-right: .05em solid rgb(183, 183, 183);
-    white-space: nowrap;
-    animation: typing 2s forwards;
-    /* animation-timing-function: ease-in-out; */
-    animation-delay: 2s;
-    width: 0;
-    /* animation-iteration-count: infinite; */
-}
-
-@keyframes typing {
-    from {
-        width: 0
+@keyframes textAnimate {
+    0% {
+        opacity: 0.2; /* Start with no width */
+        transform: translateX(20px);
     }
-
-    to {
-        width: 100%
+    100% {
+        opacity: 1; /* Collapse to no width, ready to start again */
+        transform: translateX(0px);
     }
 }
 

@@ -10,9 +10,13 @@ import IMAGES from './index'
 const Home = () => {
   return (
     <section id="home" className="home">
+      <div className='hero-title-container'>
+        <div className="hero-title"> Welcome to&nbsp;<span style={{ color: '#004080' }}>eNetraCare</span></div>
+        <p className="tagline">A visionary initiative by <Link to='/contact'>Innovease India Pvt. Ltd.</Link>  </p>
+      </div>
+
       <div className="hero" style={{ position: 'relative' }}>
         <Image_sli />
-        <div className="hero-title">Welcome to <br /><div className='typed-out' style={{textDecoration:'underline'}}>eNetraCare</div>  </div>
 
       </div>
 

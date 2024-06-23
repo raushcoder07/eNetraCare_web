@@ -37,10 +37,11 @@ const Header = () => {
         </button>
         <nav className={`nav ${menuVisible ? 'active' : ''}`}>
           <ul>
+            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
             <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
             <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
             {/* <li><Link to="/ai-detection" onClick={closeMenu}>AI Detection</Link></li> */}
-            <li><Link to="/cataracts" onClick={closeMenu}>Cataracts</Link></li>
+            {/* <li><Link to="/cataracts" onClick={closeMenu}>Cataracts</Link></li> */}
             <li 
               className="submenu" 
               onMouseEnter={toggleDropdown} 

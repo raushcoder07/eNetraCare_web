@@ -248,18 +248,17 @@
   overflow: hidden; /* Hides overflow content */
 }
 
-.hero::before{
+/* .hero::before{
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   background-color: #001b56;
-  /* background-color: #002244; */
   opacity: 0.35;
   height: 100%;
   width: 100%;
   z-index:1;
-}
+} */
 
 
 

@@ -5,7 +5,7 @@ const Testimonials = () => {
   const testimonialsData = [
     {
       name: "Daniella C.",
-      review: "I want to take this time on my own to write a review for them because they deserve it hands down!! They are a true example of greatness! The entire office! This office goes over and beyond to accommodate and help their patients with everything. Every question, every concern, every issue and every fear if that. When it comes to appointments they do EVERYTHING they can to get their patient in and happy with an appointment with the doctor they want to see. They have done it for me every single time! I’ve actually had a few emergencies within the past few months and they moved around the entire schedule to fit me in on that day if not the following day depending on the issue. They are incredible. I want to take this time to acknowledge Dr. Jay, Dr Swati, Magda. It’s not often you get to go to a doctors offic over and beyond.",
+      review: "I want to take this time on my own to write a review for them because they deserve it hands down!! They are a true example of greatness! The entire office! This office goes over and beyond to accommodate and help their patients with everything. Every question, every concern, every issue and every fear if that. When it comes to appointments they do EVERYTHING they can to get their patient in and happy with an appointment with the doctor they want to see. They have done it for me every single time! I’ve actually had a few emergencies within the past few months and they moved.",
       rating: 5
     },
     {

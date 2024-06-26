@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.3rem 3rem;
+  padding: 0.8rem 3rem;
   background-color: #004080;
   color: white;
   position: relative;
@@ -28,7 +28,7 @@
 /* Logo Styling */
 .logo h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .logo .logo-text {
@@ -36,16 +36,17 @@
   color: white;
 }
 
+/* .logo{
+  display: flex;
+  align-items: center;
+} */
 .logo .logo-icon {
   margin-right: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.tagline {
-  margin: 0;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #CCCCCC;
+#navbar-logo{
+  height: 60px;
 }
 
 /* Navigation Menu Styling */
@@ -247,6 +248,21 @@
   overflow: hidden; /* Hides overflow content */
 }
 
+/* .hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #001b56;
+  opacity: 0.35;
+  height: 100%;
+  width: 100%;
+  z-index:1;
+} */
+
+
+
+
 .image-slide {
   display: flex; /* Aligns child elements in a row */
   width: 100%;
@@ -289,7 +305,7 @@
     background-color: #1E90FF;
   }
   
-  .intro, .about-eye-health, .services, .testimonials, .education, .contact-cta {
+  .about-eye-health, .services, .testimonials, .education, .contact-cta {
     margin: 2rem 0;
     text-align: center;
   }
@@ -354,7 +370,6 @@ footer {
         margin: 0 20px;
     }
 }
-
 
 
 /* Testimonial.css */

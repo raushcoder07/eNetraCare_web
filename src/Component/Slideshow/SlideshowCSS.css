@@ -1,0 +1,85 @@
+/* Slider */
+/* Slideshow container */
+#slide-container {
+    position: relative;
+    max-width: 1200px; /* responsiveness */
+   }
+   /* First element to be in block mode for responsiveness */
+   #slide-first-element {
+    display: block; /* to get the dimensions set */
+    width: 90%;
+    height: auto;
+   }
+   /* Other element to be in absolute position */
+   #slide-element-2,
+   #slide-element-3,
+   #slide-element-4 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   }
+   /* Style images */
+   .slide-image {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+   }
+   /* Style text */
+   .slide-text {
+    position: absolute;
+    bottom: 10px;
+    background-color: #0042b1bb;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+   }
+   /* Animation settings for individual elements */
+   /* For more images the animations have to be adjusted */
+   #slide-first-element {
+    animation: fade-1 10s infinite;
+    -webkit-animation: fade-1 10s infinite;
+   }
+   #slide-element-2 {
+    animation: fade-2 10s infinite;
+    -webkit-animation: fade-2 10s infinite;
+   }
+   #slide-element-3 {
+    animation: fade-3 10s infinite;
+    -webkit-animation: fade-3 10s infinite;
+   }
+   #slide-element-4 {
+    animation: fade-4 10s infinite;
+    -webkit-animation: fade-4 10s infinite;
+   }
+   /* and more if there are more slides to show */
+   @keyframes fade-1 {
+    0% { opacity: 1; }
+    33% { opacity: 0; }
+    66% { opacity: 0; }
+    100% { opacity: 1; }
+   }
+   @keyframes fade-2 {
+    0% { opacity: 0; }
+    33% { opacity: 1; }
+    66% { opacity: 0; }
+    100% { opacity: 0; }
+   }
+   @keyframes fade-3 {
+    0% { opacity: 0; }
+    33% { opacity: 0; }
+    66% { opacity: 1; }
+    100% { opacity: 0; }
+   }
+   /* example for a 4th slide */
+   @keyframes fade-4 {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    50% { opacity: 0; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+   }

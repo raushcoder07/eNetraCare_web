@@ -66,8 +66,8 @@
      display: flex;
      flex-wrap: wrap;
      align-items: center;
-     /* justify-content: center; */
-     gap: 300px;
+     justify-content: space-between;
+     /* gap: 300px; */
  }
 
  .care-about .text-container,
@@ -109,6 +109,24 @@
      font-size: 3rem;
      text-align: center;
      /* margin-bottom: 20px; */
+ }
+
+ .milestones-box {
+     width: auto;
+     max-width: 1200px;
+ }
+ .milestone-title-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+ 
+
+ .milestone-icon{
+    max-height: 60px;
+    height: auto;
  }
 
  /* Additional styling for milestones component cards */
@@ -160,14 +178,9 @@
  }
 
  /* Media Queries for Responsiveness */
+
  @media (max-width: 1200px) {
      .info {
-         padding: 20px;
-     }
-
-     .care-about,
-     .help-society {
-         flex-direction: column;
          padding: 20px;
      }
 
@@ -194,6 +207,26 @@
          flex-direction: column;
          /* gap: 80px; */
      }
+
+     .card-profile-photo {
+         height: auto;
+     }
+     
+ }
+
+ @media (max-width: 1060px) {
+     .card-container {
+         align-items: center;
+     }
+     .care-about,
+     .help-society {
+         flex-direction: column;
+         padding: 20px;
+     }
+     .box-img{
+        height: 50%;
+     }
+
  }
 
  @media (max-width: 768px) {
@@ -223,10 +256,39 @@
          width: 80%;
      }
 
+     .care-about,
+     .help-society {
+         gap: 0;
+     }
+
      .care-about .img-container,
      .help-society .img-container {
          width: 100%;
+         margin: 0;
      }
+
+     .card-profile-photo {
+         height: auto;
+     }
+
+     .card-event-title {
+         font-size: 4vw;
+     }
+
+     .card-name{
+        font-size: 3vw;
+     }
+
+    
+     .card-profile-desc ,.card-designation{
+        font-size: 2vw;
+    }
+     
+    #team-section-title{
+        font-size: 7vw;
+        margin-bottom: 20px;
+    }
+
  }
 
  @media (max-width: 480px) {
@@ -249,6 +311,19 @@
      .box-desc {
          font-size: 0.8rem;
      }
+
+     .card-profile-photo {
+         height: auto;
+     }
+
+     .card-event-desc {
+         font-size: 2vw;
+     }
+
+     #team-section-title{
+        font-size: 7vw;
+        margin-bottom: 10px;
+    }
  }
 
  /* ++++++++++++++++++++++++++++++++++++++Code to be made responsive++++++++++++++++++++++++++++++++++++ */
@@ -257,16 +332,13 @@
      justify-content: space-around;
      /* align-items: center; */
      width: 100%;
-     gap: 00px;
- }
-
- .card-text-container {
-     width: 700px;
+     gap: 60px;
  }
 
  .card-profile-photo {
      border-radius: 7px;
-     /* transform: scale(0.5); */
-     height: 300px;
-     /* width: 230px;  */
+     height: auto;
+     max-height: 300px;
  }
+
+ 

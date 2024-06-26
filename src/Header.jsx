@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { Link } from "react-router-dom";
 import { AntDesignOutlined, DownOutlined } from '@ant-design/icons';
+import eNetraCareLogo from './assets/images/enetracareLogoedited.png'
 
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -25,20 +26,22 @@ const Header = () => {
         <div className="logo">
           <h1>
             <Link to="/" onClick={closeMenu}>
-              <AntDesignOutlined className="logo-icon" /> <span className="logo-text">eNetraCare</span>
+              {/* <AntDesignOutlined className="logo-icon" /> <span className="logo-text">eNetraCare</span> */}
+              <img src={eNetraCareLogo} id='navbar-logo' /> 
+              {/* <span className="logo-text">eNetraCare</span> */}
             </Link>
           </h1>
-          <p className="tagline">A visionary initiative by Innovease India Pvt. Ltd. </p>
         </div>
         <button className="menu-toggle" aria-label="Toggle navigation" onClick={toggleMenu}>
           &#9776; {/* Unicode for the hamburger icon */}
         </button>
         <nav className={`nav ${menuVisible ? 'active' : ''}`}>
           <ul>
+            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
             <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
             <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
             {/* <li><Link to="/ai-detection" onClick={closeMenu}>AI Detection</Link></li> */}
-            <li><Link to="/cataracts" onClick={closeMenu}>Cataracts</Link></li>
+            {/* <li><Link to="/cataracts" onClick={closeMenu}>Cataracts</Link></li> */}
             <li 
               className="submenu" 
               onMouseEnter={toggleDropdown} 
@@ -58,6 +61,7 @@ const Header = () => {
               )}
             </li>
             <li><Link to="/Testimonials" onClick={closeMenu}>Testimonials</Link></li>
+            <li><Link to="/gallery" onClick={closeMenu}>Gallery</Link></li>
             <li><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
           </ul>
         </nav>
